@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donate - HelpSoft</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #C0C0C0;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .window {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #D4D0C8;
+            border: 2px solid black;
+            box-shadow: 3px 3px 0px #888;
+        }
+
+        .title-bar {
+            background: navy;
+            color: white;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title-bar button {
+            background: silver;
+            border: 2px outset white;
+            padding: 2px 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav {
+            background: silver;
+            padding: 5px;
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px outset white;
+            margin: 2px;
+            background: #E0E0E0;
+        }
+
+        .nav a:hover {
+            border: 2px inset white;
+            background: #D0D0D0;
+        }
+
+        .content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        h2 {
+            color: navy;
+            text-align: center;
+        }
+
+        .donation-box {
+            background: silver;
+            border: 2px inset white;
+            padding: 15px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .qr-box {
+            background: white;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 15px auto;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            background: silver;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            border-top: 2px solid black;
+        }
+
+        .footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window">
+        <div class="title-bar">
+            <span>Donate - HelpSoft</span>
+            <button>X</button>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="content">
+            <h2>🙏 Support HelpSoft – Your Donation Matters!</h2>
+            <p>HelpSoft provides **free guidance, expert consultation, and professional advice** to people worldwide. Your donations help us keep the platform **ad-free, upgrade our services, and offer better quality guidance.**</p>
+
+            <div class="donation-box">
+                <h3>Why Donate?</h3>
+                <ul>
+                    <li>🚀 **Keep the platform free** – Support those who cannot afford paid guidance.</li>
+                    <li>💡 **Enhance our resources** – Improve the quality of expert consultations.</li>
+                    <li>📈 **Expand our services** – Develop new features for a better user experience.</li>
+                    <li>🛠 **Operational Costs** – Cover website hosting, maintenance, and security.</li>
+                </ul>
+            </div>
+
+            <div class="donation-box">
+                <h3>💰 How Much Can You Donate?</h3>
+                <p>You can donate **any amount between ₹100 and ₹10,00,000**.</p>
+                <p>Every contribution helps us grow and reach more people in need.</p>
+                <ul>
+                    <li>₹100 – ₹500: Support minor upgrades and maintenance.</li>
+                    <li>₹1,000 – ₹5,000: Fund research and expert collaborations.</li>
+                    <li>₹10,000 – ₹50,000: Contribute towards platform improvements.</li>
+                    <li>₹1,00,000 – ₹10,00,000: Major development, new features, and premium services.</li>
+                </ul>
+            </div>
+
+            <div class="donation-box">
+                <h3>📊 Cost Breakdown</h3>
+                <ul>
+                    <li>🌐 Website Maintenance & Hosting – **₹10,000/month**</li>
+                    <li>🛠 Development & Feature Upgrades – **₹25,000/month**</li>
+                    <li>🎓 Expert Consultation Fees – **₹50,000/month**</li>
+                    <li>📢 Marketing & Outreach – **₹15,000/month**</li>
+                    <li>⚖ Legal & Compliance – **₹5,000/month**</li>
+                    <li>💡 Innovation & Research – **₹20,000/month**</li>
+                </ul>
+            </div>
+
+            <div class="donation-box">
+                <h3>📲 Easy Donation – Scan & Pay</h3>
+                <p>Use the QR code below to donate instantly via **UPI, Paytm, Google Pay, or PhonePe**.</p>
+                <div class="qr-box">
+                    <p>[ Insert QR Code Here ]</p>
+                </div>
+                <p>For direct bank transfers, contact us at <b>support@helpsoft.com</b></p>
+            </div>
+
+            <div class="donation-box">
+                <h3>🙏 Thank You for Your Support!</h3>
+                <p>Every contribution helps us make a positive impact. Even if you cannot donate, **sharing our mission** with others is greatly appreciated.</p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            &copy; 2025 HelpSoft | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a>
+        </div>
+    </div>
+
+</body>
+</html>
