@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HelpSoft - Video Call Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C0C0C0;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .window {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #D4D0C8;
+            border: 2px solid black;
+            box-shadow: 3px 3px 0px #888;
+        }
+
+        .title-bar {
+            background: navy;
+            color: white;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title-bar button {
+            background: silver;
+            border: 2px outset white;
+            padding: 2px 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav {
+            background: silver;
+            padding: 5px;
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px outset white;
+            margin: 2px;
+            background: #E0E0E0;
+        }
+
+        .nav a:hover {
+            border: 2px inset white;
+            background: #D0D0D0;
+        }
+
+        .content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        .info-box {
+            background: silver;
+            border: 2px inset white;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .faq {
+            background: #E0E0E0;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid black;
+        }
+
+        .button {
+            display: inline-block;
+            background: silver;
+            padding: 5px 10px;
+            border: 2px outset white;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+        .button:hover {
+            border: 2px inset white;
+            background: #D0D0D0;
+        }
+
+        .footer {
+            background: silver;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            border-top: 2px solid black;
+        }
+
+        .footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window">
+        <div class="title-bar">
+            <span>HelpSoft - Video Call with CEO & Agent</span>
+            <button>X</button>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+        </div>
+
+        <div class="content">
+            <h2>📹 Video Call with CEO & Agent</h2>
+            <p>Book a video call with our CEO or agent for professional discussions.</p>
+
+            <div class="info-box">
+                <h3>📅 Call Schedule</h3>
+                <p><b>Available Timings:</b></p>
+                <ul>
+                    <li>Monday - Friday: 10:00 AM - 5:00 PM</li>
+                    <li>Saturday: 11:00 AM - 3:00 PM</li>
+                </ul>
+                <p><b>Not Available:</b></p>
+                <ul>
+                    <li>Sundays & Public Holidays</li>
+                    <li>Outside Working Hours</li>
+                </ul>
+                <p><b>Booking Requirement:</b> Calls must be **pre-booked 24 hours in advance**.</p>
+            </div>
+
+            <div class="faq">
+                <h3>✅ Allowed Questions</h3>
+                <ul>
+                    <li>Business-related inquiries</li>
+                    <li>Product development strategies</li>
+                    <li>Partnership and collaboration discussions</li>
+                    <li>Career advice</li>
+                    <li>Customer service solutions</li>
+                </ul>
+            </div>
+
+            <div class="faq">
+                <h3>🚫 Restricted Questions</h3>
+                <ul>
+                    <li>Personal life of CEO/Agent</li>
+                    <li>Company’s financial details</li>
+                    <li>Political or religious discussions</li>
+                    <li>Asking for free investments or loans</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>📊 Total Call Duration</h3>
+                <p>Each video call is limited to **15 minutes**.</p>
+                <p>If the call exceeds this limit, extra charges apply.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>💰 Extra Charges for Exceeding Time</h3>
+                <p>Users must pay **₹50 per extra minute** after 15 minutes.</p>
+                <p>**Payment is mandatory**. Non-payment may lead to **legal action or police complaint**.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>📞 Contact Details</h3>
+                <p><b>CEO’s WhatsApp Number:</b> <span style="color: red; font-size: 18px;">8103356828</span></p>
+                <p><b>Agent (Kapil Hande):</b> <span style="color: red; font-size: 18px;">9302123089</span></p>
+                <p>Payments must be **hand-to-hand** to the agent’s number.</p>
+                <p>Click below to start a WhatsApp video call.</p>
+                <a href="https://wa.me/918103356828?text=Hello,%20I%20would%20like%20to%20schedule%20a%20video%20call." class="button">📹 Call CEO</a>
+                <br><br>
+                <a href="https://wa.me/919302123089?text=Hello,%20I%20want%20to%20talk%20to%20Kapil%20Hande%20about%20video%20call%20booking." class="button">📹 Call Agent</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 HelpSoft | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+
+</body>
+</html>
