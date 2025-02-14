@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services - Retro Help Center</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #C0C0C0;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Window-like container */
+        .window {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #D4D0C8;
+            border: 2px solid black;
+            box-shadow: 3px 3px 0px #888;
+        }
+
+        /* Title bar */
+        .title-bar {
+            background: navy;
+            color: white;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title-bar button {
+            background: silver;
+            border: 2px outset white;
+            padding: 2px 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Navigation */
+        .nav {
+            background: silver;
+            padding: 5px;
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px outset white;
+            margin: 2px;
+            background: #E0E0E0;
+        }
+
+        .nav a:hover {
+            border: 2px inset white;
+            background: #D0D0D0;
+        }
+
+        /* Content */
+        .content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        .service-box {
+            background: silver;
+            padding: 10px;
+            border: 2px outset white;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            background: silver;
+            padding: 5px 10px;
+            border: 2px outset white;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+        .button:hover {
+            border: 2px inset white;
+            background: #D0D0D0;
+        }
+
+        /* Footer */
+        .footer {
+            background: silver;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            border-top: 2px solid black;
+        }
+
+        .footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Mobile-friendly */
+        @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window">
+        <div class="title-bar">
+            <span>Services - Retro Help Center</span>
+            <button>X</button>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="support.html">Support</a>
+            <a href="about.html">About</a>
+            <a href="changelog.html">Changelog</a>
+        </div>
+
+        <div class="content">
+            <h2>Our Free Services</h2>
+            <p>We provide **completely free** support for everyone.</p>
+
+            <h3>📞 Call Support</h3>
+            <div class="service-box">
+                <h4>📞 Free Phone Support</h4>
+                <p>Need help? Call our team for **free** anytime.</p>
+                <a href="call.html" class="button">Start a Call</a>
+            </div>
+
+            <h3>🎥 Video Call Support</h3>
+            <div class="service-box">
+                <h4>🎥 Free Video Call</h4>
+                <p>Talk face-to-face with one of our support agents.</p>
+                <a href="video.html" class="button">Start a Video Call</a>
+            </div>
+
+            <h3>💼 Meet the CEO</h3>
+            <div class="service-box">
+                <h4>👨‍💼 Direct Talk with CEO</h4>
+                <p>Have suggestions or feedback? **Talk to our CEO for free**.</p>
+                <a href="ceo.html" class="button">Schedule a Meeting</a>
+            </div>
+
+            <p>Need something else? <a href="#">Contact us</a> for special requests.</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 Retro Help Center | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+
+</body>
+</html>
