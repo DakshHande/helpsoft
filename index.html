@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HelpSoft - Classic 1994 Microsoft UI</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #C0C0C0;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Window-like container */
+        .window {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #D4D0C8;
+            border: 2px solid black;
+            box-shadow: 3px 3px 0px #888;
+        }
+
+        /* Window title bar */
+        .title-bar {
+            background: navy;
+            color: white;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title-bar button {
+            background: silver;
+            border: 2px outset white;
+            padding: 2px 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Navigation */
+        .nav {
+            background: silver;
+            padding: 5px;
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px outset white;
+            margin: 2px;
+            background: #E0E0E0;
+        }
+
+        .nav a:hover {
+            border: 2px inset white;
+            background: #D0D0D0;
+        }
+
+        /* Content */
+        .content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background: silver;
+            padding: 5px 10px;
+            border: 2px outset white;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+        .button:hover {
+            border: 2px inset white;
+            background: #D0D0D0;
+        }
+
+        /* Footer */
+        .footer {
+            background: silver;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            border-top: 2px solid black;
+        }
+
+        .footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Mobile-friendly */
+        @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav a {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window">
+        <div class="title-bar">
+            <span>HelpSoft - 1994 Microsoft UI</span>
+            <button>X</button>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="service.html">Service</a>
+            <a href="support.html">Support</a>
+            <a href="about.html">About</a>
+            <a href="changelog.html">Changelog</a>
+        </div>
+
+        <div class="content">
+            <h2>Welcome to HelpSoft</h2>
+            <p>Your ultimate software assistance center, designed with a nostalgic 1994 Windows experience.</p>
+
+            <h3>🖥️ What is HelpSoft?</h3>
+            <p>HelpSoft is a **retro-themed support platform** that provides **free services**, including:</p>
+            <ul>
+                <li>📞 **Call Support** - Talk with our experts anytime.</li>
+                <li>🎥 **Video Support** - Face-to-face troubleshooting.</li>
+                <li>💼 **Meet the CEO** - Directly interact with leadership.</li>
+            </ul>
+
+            <h3>🌐 Why Software Development Matters in 2025?</h3>
+            <p>As we move into **2025**, software is shaping the world. Here’s why it’s more important than ever:</p>
+            <ul>
+                <li>🚀 **AI & Automation** - Smart applications are replacing manual work.</li>
+                <li>🔐 **Cybersecurity** - With rising cyber threats, secure software is critical.</li>
+                <li>📱 **Mobile Evolution** - 90% of users access services via mobile devices.</li>
+                <li>🌍 **Global Connectivity** - Cloud-based software allows real-time collaboration.</li>
+                <li>💰 **Digital Economy** - Businesses rely on software to run smoothly.</li>
+            </ul>
+
+            <h3>🔧 How HelpSoft Works?</h3>
+            <p>We provide **real-time support** for all tech-related issues. Just **click a button** below to get started.</p>
+            
+            <br>
+            <a href="help.html" class="button">Get Help</a>
+            <a href="contact.html" class="button">Contact Support</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 HelpSoft | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+
+</body>
+</html>
