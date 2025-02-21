@@ -11,7 +11,8 @@
             margin: 0;
             padding: 0;
             text-align: center;
-        }.window {
+        }/* Window-like container */
+    .window {
         width: 90%;
         max-width: 800px;
         margin: 20px auto;
@@ -20,6 +21,7 @@
         box-shadow: 3px 3px 0px #888;
     }
 
+    /* Window title bar */
     .title-bar {
         background: navy;
         color: white;
@@ -40,6 +42,7 @@
         cursor: pointer;
     }
 
+    /* Navigation */
     .nav {
         background: silver;
         padding: 5px;
@@ -65,6 +68,7 @@
         background: #D0D0D0;
     }
 
+    /* Content */
     .content {
         padding: 15px;
         text-align: left;
@@ -74,6 +78,24 @@
         color: navy;
     }
 
+    /* Buttons */
+    .button {
+        display: inline-block;
+        background: silver;
+        padding: 5px 10px;
+        border: 2px outset white;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+
+    .button:hover {
+        border: 2px inset white;
+        background: #D0D0D0;
+    }
+
+    /* Footer */
     .footer {
         background: silver;
         padding: 10px;
@@ -87,7 +109,44 @@
         text-decoration: none;
         font-weight: bold;
     }
+
+    /* Mobile-friendly */
+    @media (max-width: 600px) {
+        .nav {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav a {
+            width: 80%;
+            text-align: center;
+        }
+    }
 </style>
+
+<!-- Statcounter Code -->
+<script type="text/javascript">
+    var sc_project=13089508; 
+    var sc_invisible=0; 
+    var sc_security="ca047c7c"; 
+    var scJsHost = "https://";
+    document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript>
+    <div class="statcounter">
+        <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+            <img class="statcounter" src="https://c.statcounter.com/13089508/0/ca047c7c/0/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade">
+        </a>
+    </div>
+</noscript>
+
+<!-- Infolinks Ad Code -->
+<script type="text/javascript"> 
+    var infolinks_pid = 3433200; 
+    var infolinks_wsid = 0; 
+</script> 
+<script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 
 </head>
 <body><div class="window">
@@ -108,7 +167,6 @@
     <div class="content">
         <h2>Welcome to HelpSoft</h2>
         <p>Your ultimate software assistance center, designed with a nostalgic 1994 Windows experience.</p>
-    </div>
 
     <div class="footer">
         &copy; 2025 HelpSoft | 
@@ -116,25 +174,6 @@
         <a href="privacy.html">Privacy Policy</a>
     </div>
 </div>
-
-<!-- Default Statcounter code for Helping Website -->
-<script type="text/javascript">
-    var sc_project=13089508; 
-    var sc_invisible=0; 
-    var sc_security="ca047c7c"; 
-    var scJsHost = "https://";
-    document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-    "statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript>
-    <div class="statcounter">
-        <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
-            <img class="statcounter" src="https://c.statcounter.com/13089508/0/ca047c7c/0/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade">
-        </a>
-    </div>
-</noscript>
-<!-- End of Statcounter Code -->
-<a href="https://statcounter.com/p13089508/?guest=1">View My Stats</a>
 
 </body>
 </html>
